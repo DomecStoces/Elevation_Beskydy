@@ -31,7 +31,7 @@ glimpse(all_data_long)
 write_xlsx(all_data_long, "Hamřík_long.xlsx")
 
 dataset_kula<-read_excel("Hamřík_long.xlsx")
-table(dataset_kula$year,dataset_kula$site,dataset_kula$site_protection)
+table(dataset_kula$year,dataset_kula$site,dataset_kula$taxon_group)
 
 # Adding traits info to taxon_groups
 traits_path <- "traits.xlsx"
